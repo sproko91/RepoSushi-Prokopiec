@@ -14,7 +14,7 @@
 
 #index {display: grid;
 		grid-template-columns:1fr ;
-		grid-template-rows: 30vh 40vh 30vh;
+		grid-template-rows: auto;
 		grid-template-areas: 
 		"nav"
 		"main"
@@ -73,12 +73,12 @@ footer {grid-area: footer;
 		justify-content: space-evenly ;
 		font-size: 14px;}
 
-.direcciones { text-align: center;
+.direcciones { text-align: center; margin-top: 2%;
 	              }
 
-.emails { text-align: center ;
-		display: none;
-		}
+.emails { text-align: center ; margin: 5% 0 
+				}
+#escribinos {margin-bottom: 2%;}
 
 .iconos { display: flex;
 			flex-direction: row;
@@ -89,13 +89,20 @@ footer {grid-area: footer;
 					}
 
 
-.main__index {grid-area: main;
-				}
+		
+@keyframes headerAnimation{
+	0%{background-image: url(../img/header1.jpg);background-repeat: no-repeat;background-size: 100vw 40vh;}
+	30%{background-image: url(../img/header2.jpg);background-repeat: no-repeat;background-size: 100vw 40vh}
+	70%{background-image: url(../img/header3.jpg);background-repeat: no-repeat;background-size: 100vw 40vh}
+    100%{background-image: url(../img/header1.jpg);background-repeat: no-repeat;background-size: 100vw 40vh;}
+}
 
+.main__index { grid-area: main;
+	height: 40vh;
+	animation-name: headerAnimation;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;}
 
-.index { display: flex; 
-	     width:100vw; height: 40vh; 
-	 	}	
 
 .boton {border-radius: 14px;}
 
@@ -140,8 +147,6 @@ footer {grid-area: footer;
 			}
 		
 
-.index {   display: none;
-	 	}			
 
 @keyframes headerAnimation{
 	0%{background-image: url(../img/header1.jpg);background-repeat: no-repeat;background-size: 100vw 64vh;}
@@ -170,13 +175,15 @@ footer {flex-direction: row;
 			flex-direction: column;
 			flex-grow: 0.3;
 			padding-left: 15px;
+			margin: 0;
 						           }
 
 
 .emails {	text-align: center ;
 		display: flex ;
 		flex-direction: column;
-		margin-top: 25px;
+		margin-top: 50px;
+		margin-bottom: 0;
 		box-sizing: border-box;
 		flex-grow: 2;	
 		}
@@ -185,9 +192,11 @@ footer {flex-direction: row;
 		flex-direction: row;
 		justify-content: space-evenly;
 		margin-top: 10px;
+		margin-bottom: 0;
 		align-items: center;
 		box-sizing: border-box;
 		flex-grow: 1.2
+
 				}
 
 }

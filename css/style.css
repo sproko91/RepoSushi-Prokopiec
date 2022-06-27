@@ -87,9 +87,9 @@ footer {grid-area: footer;
 			text-align: center;
 
 					}
-
-
 		
+	
+
 @keyframes headerAnimation{
 	0%{background-image: url(../img/header1.jpg);background-repeat: no-repeat;background-size: 100vw 40vh;}
 	30%{background-image: url(../img/header2.jpg);background-repeat: no-repeat;background-size: 100vw 40vh}
@@ -97,11 +97,12 @@ footer {grid-area: footer;
     100%{background-image: url(../img/header1.jpg);background-repeat: no-repeat;background-size: 100vw 40vh;}
 }
 
-.main__index { grid-area: main;
+.main__index { 
 	height: 40vh;
 	animation-name: headerAnimation;
 	animation-duration: 15s;
 	animation-iteration-count: infinite;}
+
 
 
 .boton {border-radius: 14px;}

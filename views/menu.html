@@ -5,23 +5,39 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sushi Lin - Menu</title>
 	<link rel="shortcut icon" href="..//img/favicon.png">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/style.css">
 </head>
-<body id="menu">
-	<nav>
-		<div class="navegador1">
-		<a class="navegador__imagen" href="../index.html">
-			<img id="logo" src="../img/favicon.png" alt="Logo sushi lin shushilin"></a>
-		<h1 class="navegador__texto">Sushi Lin</h1>
-		</div>
-		<ul class="navegador2">
-			<li><a href="../views/menu.html"> Menu</a></li>
-			<li><a href="../views/promociones.html">Promociones</a></li>
-			<li><a href="../views/locales.html">Locales</a></li>
-			<li><a href="../views/eventos.html">Eventos y Catering</a></li>
-		</ul>
-	</nav>
-	<!-- end nav -->
+<body>
+<!-- inicio NAV -->
+	<nav class="navbar navbar-expand-lg navbar navbar-dark bg-nav sticky-top">
+  		<div class="container-fluid">
+   	 		<a class="navbar-brand d-flex align-items-end" href="../index.html"> <img src="../img/logo.png" class="rounded-pill boton" id="logo" alt="Logo sushi lin shushilin">
+		 	</a>
+    		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      		<span class="navbar-toggler-icon"></span>
+    		</button>
+    	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+     		<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        		<li class="nav-item mx-4">
+         		 <a class="nav-link active" aria-current="page" href="../views/menu.html">Menu</a>
+        		</li>
+        		<li class="nav-item  mx-4">
+         		 <a class="nav-link active" href="../views/promociones.html">Promociones</a>
+        		</li>
+        		</li>
+        		<li class="nav-item  mx-4">
+         		 <a class="nav-link active" href="../views/locales.html">Locales</a>
+        		</li>
+        		</li>
+        		<li class="nav-item mx-4">
+         		 <a class="nav-link active" href="../views/eventos.html">Eventos y Catering</a>
+        		</li>
+        	</ul>
+        </div>
+  </div>
+</nav>
+<!-- end nav -->
 <main class="menu">
 	<div class="menu__total">
 		<section class="menu__texto">
@@ -157,6 +173,7 @@
 	 				<td>$300.-</td>
 	 			</tr>
 	 		</table>
+	 		
 	 			<a class="menu__boton boton__scale" href="../views/locales.html">
 					<img class="boton" src="../img/haztupedido2.png" alt="haz tu pedido sushi lin"></a>
 		</section>
@@ -184,6 +201,6 @@
 	<a href="https://www.instagram.com/lin.sushi/" target="_blank"><img class="boton" src="../img/ig.png" alt="instagram ig sushi lin" width="60"height="60"></a>
 	</div>
 </footer>
-
+<script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
